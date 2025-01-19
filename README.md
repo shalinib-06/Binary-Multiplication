@@ -1,8 +1,8 @@
 ## Binary Multiplication
 ---
 ### About
-This is Java-based application which provides interface for performing binary multiplication. 
-It allows users to input two integers, multiplies them, and displays the result in both binary and integer(decimal) formats.
+######This is Java-based application which provides interface for performing binary multiplication. 
+######It allows users to input two integers, multiplies them, and displays the result in both binary and integer(decimal) formats.
 ---
 ### Features
 - Input two integers in integer format.
