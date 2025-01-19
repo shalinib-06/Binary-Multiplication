@@ -9,7 +9,7 @@
 2. Display the binary equivalent of each input.
 3. Perform binary multiplication.
 4. Display the result in both binary and decimal formats.
-5. Clear input fields and results with a "Clear" button.
+5. Clear input fields and results with a 'Clear' button.
 ---
 ### Sample output
 ![Layout](scrennshot/layout.png)
