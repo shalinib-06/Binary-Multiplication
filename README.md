@@ -12,7 +12,6 @@
 5. Clear input fields and results with a 'Clear' button.
 ---
 ### Sample output
-![Layout](screenshot/layout.png)
 ![Output1](screenshot/poutput.png)
 ![Output2](screenshot/noutput.png)
 ![InvalidOutput](screenshot/invalidoutput.png)
