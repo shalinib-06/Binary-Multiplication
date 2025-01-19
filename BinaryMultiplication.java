@@ -12,18 +12,18 @@ public class BinaryMultiplication extends JFrame {
 
     public BinaryMultiplication() {
         setTitle("Binary Multiplication");
-        setSize(400, 300);
+        setSize(500, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(6, 2));
 
-        JLabel input1Label = new JLabel("Enter first integer:");
+        JLabel input1Label = new JLabel(" Enter first integer:");
         input1Field = new JTextField();
 
-        JLabel input2Label = new JLabel("Enter second integer:");
+        JLabel input2Label = new JLabel(" Enter second integer:");
         input2Field = new JTextField();
 
-        binary1Label = new JLabel("First number  ");
-        binary2Label = new JLabel("Second number  ");
+        binary1Label = new JLabel("First number in binary: ");
+        binary2Label = new JLabel("Second number in binary: ");
         
         resultLabel = new JLabel("Result in binary and integer: ");
         resultLabel.setFont(new Font("Arial", Font.BOLD, 14)); 
@@ -42,7 +42,8 @@ public class BinaryMultiplication extends JFrame {
         add(binary2Label);
         add(calculateButton);
         add(clearButton);
-        add(new JLabel("")); 
+        add(new JLabel(""));
+        add(resultLabel);
         
     }
 
@@ -61,7 +62,7 @@ public class BinaryMultiplication extends JFrame {
                 String input2 = input2Field.getText();
 
                 if (!isInteger(input1) || !isInteger(input2)) {
-                    JOptionPane.showMessageDialog(null, "enter valid integers.");
+                    JOptionPane.showMessageDialog(null, "Please enter valid integers.");
                     return;
                 }
 
@@ -71,13 +72,13 @@ public class BinaryMultiplication extends JFrame {
                 String binary1 = Integer.toBinaryString(num1);
                 String binary2 = Integer.toBinaryString(num2);
 
-                binary1Label.setText("First number: " + binary1);
-                binary2Label.setText("Second number: " + binary2);
+                binary1Label.setText(" First number in binary: " + binary1);
+                binary2Label.setText("Second number in binary: " + binary2);
 
                 int product = num1 * num2;
                 resultLabel.setText("Result in binary: " + Integer.toBinaryString(product) + " | Result in integer: " + product);
             } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(null, "enter valid integers.");
+                JOptionPane.showMessageDialog(null, "Please enter valid integers.");
             }
         }
     }
